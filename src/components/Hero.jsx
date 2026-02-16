@@ -14,7 +14,8 @@ function Hero() {
            </p>
         </div>
         <div>
-            
+            <img src="" alt="" width={250} height={250} className=''/>
+
         </div>
     </div>
   )
