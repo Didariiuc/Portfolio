@@ -24,25 +24,25 @@ function NavBar() {
         <div className="hidden lg:flex space-x-6">
           <a
             href="#skills"
-            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-400 hover:text-black transition duration-300"
+            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
           >
             Skills
           </a>
           <a
             href="#projects"
-            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-400 hover:text-black transition duration-300"
+            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
           >
             Projects
           </a>
           <a
             href="#testimonial"
-            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-400 hover:text-black transition duration-300"
+            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
           >
             Testimonial
           </a>
           <a
             href="#education"
-            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-400 hover:text-black transition duration-300"
+            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
           >
             Education
           </a>
@@ -65,7 +65,7 @@ function NavBar() {
             <li>
               <a
                 href="#skills"
-                className="text-amber-300 text-xl hover:text-amber-400 transition duration-300"
+                className="text-amber-300 text-xl hover:text-amber-500 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Skills
@@ -74,7 +74,7 @@ function NavBar() {
             <li>
               <a
                 href="#projects"
-                className="text-amber-300 text-xl hover:text-amber-400 transition duration-300"
+                className="text-amber-300 text-xl hover:text-amber-500 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Projects
@@ -83,7 +83,7 @@ function NavBar() {
             <li>
               <a
                 href="#testimonial"
-                className="text-amber-300 text-xl hover:text-amber-400 transition duration-300"
+                className="text-amber-300 text-xl hover:text-amber-500 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Testimonial
@@ -92,7 +92,7 @@ function NavBar() {
             <li>
               <a
                 href="#education"
-                className="text-amber-300 text-xl hover:text-amber-400 transition duration-300"
+                className="text-amber-300 text-xl hover:text-amber-500 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 Education
