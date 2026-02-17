@@ -1,21 +1,26 @@
 import React from 'react'
 
 function Project() {
-  return (
-    <div>
-      <div className='text-white text-3xl font-bold flex justify-center items-center gap-4 mb-3'>
-        Projects
-      </div>
+  const projects = [
+    "Hospital Management System",
+    "Bus Ticket Booking",
+    "Hotel Management System",
+    "E-Commerce Website"
+  ];
 
-      <div className='text-white flex justify-center items-center gap-4'>
-        <div className='space-y-5'>
-          <div className='p-5 border-2 rounded-2xl bg-amber-600 font-bold text-xl'>Hospital Management System</div>
-          <div className='p-5 border-2 rounded-2xl bg-amber-600 font-bold text-xl'>Bus Ticket Booking</div>
-        </div>
-        <div className='space-y-5'>
-          <div className='p-5 border-2 rounded-2xl bg-amber-600 font-bold text-xl'>Hotel Management System</div>
-          <div className='p-5 border-2 rounded-2xl bg-amber-600 font-bold text-xl'>E-Commerce Website</div>
-        </div>
+  return (
+    <div className="p-10 text-white ">
+      <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+        {projects.map((project, index) => (
+          <div 
+            key={index} 
+            className="bg-white/10 rounded-2xl shadow-md p-6 text-center font-bold text-xl hover:bg-white/20 transition"
+          >
+            {project}
+          </div>
+        ))}
       </div>
     </div>
   )
