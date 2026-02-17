@@ -6,13 +6,16 @@ function Hero() {
   return (
     <div className=' flex justify-around items-center p-10 space-x-10 lg:flex-row ssm:flex-col ssm:space-y-10 text-white'>
         <div className='lg:w-1/3 items-center ssm:w-fit'>
-            <p className='text-4xl mb-5 text-slate-300'>I'm</p>
-            <h1 className='text-6xl'>Md <br />Abu Bakar <br />Siddik Didar</h1>
+           <div>
+             <p className='text-4xl mb-5 text-slate-300'>I'm</p>
+            <h1 className='text-6xl'>Md Abu Bakar Siddik Didar</h1>
         </div>
-        <div className='lg:w-1/3 items-center ssm:w-fit'>
+        <hr className='mt-4 w-full border-t border-slate-700'/>
+        <div className=''>
            <p className='mt-10 text-xl text-slate-300 font-sans'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni vel consequuntur veritatis fuga ad quis earum rem sapiente quam culpa laborum maiores alias molestiae omnis, iste sequi animi tempore atque.
            </p>
+           </div>
         </div>
         <div className='lg:w-1/3 items-center ssm:w-fit'>
             <img src={HeroPic} alt="" width={350} height={350} className='rounded-full w-full border-8 border-white'/>
