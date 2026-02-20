@@ -15,8 +15,8 @@ import Main from './components/main.jsx'
 
 const router = createBrowserRouter(
 createRoutesFromElements(
-  <Route path='' element={<Root/>}>
-    {/* <Route path='' element={<Main />} /> */}
+  <Route path='/' element={<Root/>}>
+    <Route path='' element={<Main />} />
     <Route path='/skills' element={<Skills />} />
     <Route path='/projects' element={<Project />} />
     <Route path='/testimonial' element={<Testimonial />} />

@@ -10,14 +10,14 @@ import Skills from "./Skills";
 
 export default function Main() {
   return (
-    <div className="bg-linear-to-r from-black via-amber-600 to-black">
-        <NavBar></NavBar>
+    <div >
+        
         <Hero></Hero>
         <Project></Project>
         <Skills></Skills>
         <Testimonial></Testimonial>
         <Education></Education>
-        <Footer></Footer>
+        
         
     </div>
   )

@@ -7,9 +7,11 @@ import Main from './main.jsx'
 function Root() {
   return (
     <>
-        <Main />
+      <div className="bg-linear-to-r from-black via-amber-600 to-black">
+        <NavBar />
         <Outlet />
         <Footer />
+      </div>
     </>
   )
 }
