@@ -2,11 +2,33 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import Root from './components/Root.jsx'
+import { BrowserRouter, createBrowserRouter, createRoutesFromElements, Route } from 'react-router'
+import { RouterProvider } from 'react-router-dom'
+import Skills from './components/Skills.jsx'
+import Project from './components/Project.jsx'
+import Testimonial from './components/Testimonial.jsx'
+import Education from './components/Education.jsx'
+import NavBar from './components/NavBar.jsx'
+import Hero from './components/Hero.jsx'
+import Main from './components/main.jsx'
 
+const router = createBrowserRouter(
+createRoutesFromElements(
+  <Route path='' element={<Root/>}>
+    {/* <Route path='' element={<Main />} /> */}
+    <Route path='/skills' element={<Skills />} />
+    <Route path='/projects' element={<Project />} />
+    <Route path='/testimonial' element={<Testimonial />} />
+    <Route path='/education' element={<Education />} />
+      
+
+  </Route>
+))
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </StrictMode>,
 )
