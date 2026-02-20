@@ -51,7 +51,7 @@ function NavBar() {
         {/* Mobile Toggle */}
         <div onClick={handleToggle} className="lg:hidden cursor-pointer">
           {isOpen ? (
-            <AiOutlineClose size={30} className="text-white" />
+            < AiOutlineClose size={30} className="text-white" />
           ) : (
             <HiMenuAlt1 size={30} className="text-white" />
           )}
