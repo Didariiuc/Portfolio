@@ -5,14 +5,16 @@ import Testimonial from './Testimonial';
 import Education from './Education';
 import Footer from './Footer';
 import Skills from "./Skills";
+import Achievement from "./Achievement";
 
 
 
 export default function Main() {
   return (
-    <div >
+    <div className="min-h-screen">
         
         <Hero></Hero>
+        <Achievement/>
         <Project></Project>
         <Skills></Skills>
         <Testimonial></Testimonial>

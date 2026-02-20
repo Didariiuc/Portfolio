@@ -10,7 +10,7 @@ function NavBar() {
   const handleToggle = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-linear-to-r from-black via-amber-600 to-black shadow-xl w-full z-50">
+    <nav className=" bg-linear-to-r from-black via-amber-600 to-black shadow-xl w-full z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link
@@ -22,7 +22,14 @@ function NavBar() {
         </Link>
 
         {/* Desktop Menu */}
+        
         <div className="hidden lg:flex space-x-6">
+          <Link
+            to="/"
+            className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
+          >
+            Home
+          </Link>
           <Link
             to="/skills"
             className="text-white text-lg px-4 py-2 rounded-full hover:bg-amber-500 hover:text-black transition duration-300"
@@ -63,6 +70,15 @@ function NavBar() {
       {isOpen && (
         <div className="lg:hidden bg-black/80 backdrop-blur-sm py-6 transition-all duration-500 ease-in-out">
           <ul className="flex flex-col items-center space-y-4">
+            <li>
+              <Link
+                to="/"
+                className="text-amber-300 text-xl hover:text-amber-500 transition duration-300"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
             <li>
               <Link
                 to="/skills"

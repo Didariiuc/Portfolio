@@ -7,7 +7,7 @@ import Main from './main.jsx'
 function Root() {
   return (
     <>
-      <div className="bg-linear-to-r from-black via-amber-600 to-black">
+      <div className="bg-linear-to-r from-black via-amber-600 to-black min-h-screen">
         <NavBar />
         <Outlet />
         <Footer />

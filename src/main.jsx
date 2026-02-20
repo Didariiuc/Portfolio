@@ -12,18 +12,21 @@ import Education from './components/Education.jsx'
 import NavBar from './components/NavBar.jsx'
 import Hero from './components/Hero.jsx'
 import Main from './components/main.jsx'
+import Home from './components/Home.jsx'
+import { Navigate } from 'react-router-dom'
 
 const router = createBrowserRouter(
-createRoutesFromElements(
-  <Route path='/' element={<Root/>}>
-    <Route path='' element={<Main />} />
-    <Route path='/skills' element={<Skills />} />
-    <Route path='/projects' element={<Project />} />
-    <Route path='/testimonial' element={<Testimonial />} />
-    <Route path='/education' element={<Education />} />
-      
+  createRoutesFromElements(
+    <Route path='' element={<Root />}>
+      <Route index element={<Home />} />
+      <Route path='/skills' element={<Skills />} />
+      <Route path='/projects' element={<Project />} />
+      <Route path='/testimonial' element={<Testimonial />} />
+      <Route path='/education' element={<Education />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
 
-  </Route>
+
+  </Route >
 ))
 
 
