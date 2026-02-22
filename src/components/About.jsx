@@ -5,6 +5,16 @@ import { FaDownload, FaEnvelope, FaBriefcase, FaGraduationCap } from "react-icon
 import Skills from './Skills';
 
 function About() {
+
+const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/CV.pdf'; // Corrected path for public folder
+    link.download = 'CV-Abu Bakar.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
     return (
         <div className="relative pt-20">
             {/* About Section */}
@@ -41,8 +51,8 @@ function About() {
                     {/* Stats Cards - New Glassmorphism Style */}
                     <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
                         {[
-                            { label: "Experience", value: "2+", color: "from-blue-500" },
-                            { label: "Projects", value: "20+", color: "from-[#a855f7]" },
+                            { label: "Year Experience", value: "0+", color: "from-blue-500" },
+                            { label: "Projects", value: "3+", color: "from-[#a855f7]" },
                             { label: "Commitment", value: "100%", color: "from-cyan-500" }
                         ].map((stat, i) => (
                             <div key={i} className='p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md text-center hover:border-white/20 transition-all'>
@@ -56,14 +66,17 @@ function About() {
 
                     {/* Action Buttons */}
                     <div className='flex flex-wrap gap-4 justify-center lg:justify-start'>
-                        <button className="flex items-center gap-2 bg-gradient-to-r from-[#a855f7] to-[#6366f1] hover:opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all shadow-[0_0_15px_rgba(168,85,247,0.4)]">
+                        <button
+                        onClick={handleDownload} className="flex items-center gap-2 bg-gradient-to-r from-[#a855f7] to-[#6366f1] hover:opacity-90 text-white font-bold py-3 px-8 rounded-full transition-all shadow-[0_0_15px_rgba(168,85,247,0.4)]">
                             <FaDownload size={18} />
                             Download CV
                         </button>
-                        <button className="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full transition-all">
+                        <a
+                           href="mailto:mdabubakarsiddikdidar@gmail.com"
+                         className="flex items-center gap-2 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold py-3 px-8 rounded-full transition-all">
                             <FaEnvelope size={18} className="text-[#a855f7]" />
                             Contact Me
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

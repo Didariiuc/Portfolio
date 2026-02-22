@@ -10,9 +10,9 @@ function Skills() {
     { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500", glow: "group-hover:shadow-green-500/20" },
     { name: "Express", icon: <SiExpress />, color: "text-neutral-400", glow: "group-hover:shadow-neutral-400/20" },
     { name: "C++", icon: <FaCuttlefish />, color: "text-blue-600", glow: "group-hover:shadow-blue-600/20" },
-    { name: "Prisma", icon: <SiPrisma />, color: "text-indigo-500", glow: "group-hover:shadow-indigo-500/20" },
+    
     { name: "Tailwind", icon: <SiTailwindcss />, color: "text-teal-400", glow: "group-hover:shadow-teal-400/20" },
-    { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400", glow: "group-hover:shadow-green-400/20" },
+    
     { name: "JWT Auth", icon: <FaLock />, color: "text-purple-500", glow: "group-hover:shadow-purple-500/20" },
     { name: "HTML & CSS", icon: <SiHtml5 />, color: "text-orange-500", glow: "group-hover:shadow-orange-500/20" },
     { name: "DSA", icon: <FaCode />, color: "text-cyan-400", glow: "group-hover:shadow-cyan-400/20" },

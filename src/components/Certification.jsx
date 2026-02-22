@@ -12,7 +12,7 @@ function Certification() {
   const certifications = [
     {
       title: "Ramadan Fest 2025",
-      issuer: "IIUC COmputer Club",
+      issuer: "IIUC Computer Club",
       date: "2025",
       image: RamadaCert,
       description: "This certification recognizes active participation and contribution in Ramadan Fest 2025, an event organized by the IIUC Computer Club, featuring cultural, technical, and community-focused activities. The program emphasized teamwork, creativity, event coordination, and engagement within the academic and tech community during the holy month of Ramadan.",
@@ -20,14 +20,14 @@ function Certification() {
     },
     {
       title: "Road to FAANG Companies",
-      issuer: "IIUC COmputer Club & IIUC CPS",
+      issuer: "IIUC Computer Club & IIUC CPS",
       date: "2025",
       image: FaangCert,
       description: "This certification recognizes active participation and contribution in the Road to FAANG Companies program, an initiative organized by the IIUC Computer Club. The program focused on preparing students for careers in top-tier technology companies through workshops, mentorship, and skill-building activities.",
       id: "CERT-002"
     },
      {
-      title: "Edge Computing Workshop",
+      title: "Edge Mobile App Development Workshop 2025",
       issuer: "Computer Science & Engineering Department, IIUC",
       date: "2025",
       image: EdgeCert,
@@ -112,7 +112,7 @@ function Certification() {
                 </div>
 
                 <button className="flex items-center gap-3 px-8 py-4 bg-white text-black font-black uppercase text-[10px] tracking-[0.2em] rounded-xl hover:bg-cyan-400 transition-all">
-                  Validate Online <FaExternalLinkAlt />
+                  Validated Online
                 </button>
               </motion.div>
 

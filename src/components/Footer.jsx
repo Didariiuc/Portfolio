@@ -24,10 +24,10 @@ function Footer() {
         <div className="flex space-x-6">
           {[
             { Icon: FaGithub, link: "https://github.com/Didariiuc", color: "hover:text-white" },
-            { Icon: FaLinkedin, link: "https://www.linkedin.com/...", color: "hover:text-[#0077b5]" },
-            { Icon: FaTwitter, link: "https://x.com/...", color: "hover:text-[#1da1f2]" },
-            { Icon: FaFacebook, link: "https://facebook.com/...", color: "hover:text-[#1877f2]" },
-            { Icon: FaYoutube, link: "https://youtube.com/...", color: "hover:text-red-500" },
+            { Icon: FaLinkedin, link: "https://www.linkedin.com/in/md-abu-bakar-siddik-didar-704863330?utm_source=share_via&utm_content=profile&utm_medium=member_ios", color: "hover:text-[#0077b5]" },
+            { Icon: FaTwitter, link: "https://x.com/didduuuuu?s=21", color: "hover:text-[#1da1f2]" },
+            { Icon: FaFacebook, link: "https://www.facebook.com/share/1EC5NwSCrN/?mibextid=wwXIfr", color: "hover:text-[#1877f2]" },
+            { Icon: FaYoutube, link: "https://youtube.com/@diva_tune?si=IfjX1caapzn50es9", color: "hover:text-red-500" },
           ].map((item, idx) => (
             <motion.a
               key={idx}

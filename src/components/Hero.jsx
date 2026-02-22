@@ -34,12 +34,18 @@ function Hero() {
             </div>
             <span className="text-sm md:text-base font-medium text-neutral-200">Available for Work</span>
           </div>
-
+          
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Front-End <br />
+            I'm <br />
             <span className='bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899] bg-clip-text text-transparent'>
-              Developer
+              Abu Bakar Siddik
+            </span> <br />
+            Front-End 
+            <span className='bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899] ml-5 bg-clip-text text-transparent'>
+             Developer
             </span>
+            <br />
+            
           </h1>
 
           <div className="mt-6 h-1 w-20 bg-[#a855f7] rounded-full mx-auto lg:mx-0 shadow-[0_0_15px_#a855f7]"></div>
@@ -73,10 +79,10 @@ function Hero() {
           <div className="flex justify-center lg:justify-start mt-10 space-x-6">
             {[
               { Icon: FaGithub, link: "https://github.com/Didariiuc", color: "hover:text-white" },
-              { Icon: FaLinkedin, link: "https://www.linkedin.com/...", color: "hover:text-[#0077b5]" },
-              { Icon: FaTwitter, link: "https://x.com/...", color: "hover:text-[#1da1f2]" },
-              { Icon: FaFacebook, link: "https://facebook.com/...", color: "hover:text-[#1877f2]" },
-              { Icon: FaYoutube, link: "https://youtube.com/...", color: "hover:text-red-500" },
+              { Icon: FaLinkedin, link: "https://www.linkedin.com/in/md-abu-bakar-siddik-didar-704863330?utm_source=share_via&utm_content=profile&utm_medium=member_ios", color: "hover:text-[#0077b5]" },
+              { Icon: FaTwitter, link: "https://x.com/didduuuuu?s=21", color: "hover:text-[#1da1f2]" },
+              { Icon: FaFacebook, link: "https://www.facebook.com/share/1EC5NwSCrN/?mibextid=wwXIfr", color: "hover:text-[#1877f2]" },
+              { Icon: FaYoutube, link: "https://youtube.com/@diva_tune?si=IfjX1caapzn50es9", color: "hover:text-red-500" },
             ].map(({ Icon, link, color }, idx) => (
               <a key={idx} href={link} className={`text-neutral-500 text-2xl transition-all duration-300 ${color} hover:scale-125`}>
                 <Icon />

@@ -72,8 +72,8 @@ function Contact() {
         <div className='flex gap-6 pt-4'>
           {[
             { icon: FaGithub, link: "https://github.com/Didariiuc", color: "hover:text-white" },
-            { icon: FaLinkedin, link: "https://www.linkedin.com/...", color: "hover:text-[#0077b5]" },
-            { icon: FaTwitter, link: "https://x.com/...", color: "hover:text-[#1da1f2]" },
+            { icon: FaLinkedin, link: "https://www.linkedin.com/in/md-abu-bakar-siddik-didar-704863330?utm_source=share_via&utm_content=profile&utm_medium=member_ios", color: "hover:text-[#0077b5]" },
+            { icon: FaTwitter, link: "https://x.com/didduuuuu?s=21", color: "hover:text-[#1da1f2]" },
           ].map((social, i) => (
             <a key={i} href={social.link} className={`text-neutral-500 text-3xl transition-all hover:scale-125 ${social.color}`}>
               <social.icon />

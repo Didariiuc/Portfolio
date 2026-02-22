@@ -11,11 +11,7 @@ function Project() {
     { name: "Bus Ticket Pro", icon: <FaBus />, color: "from-emerald-500 to-teal-400" },
     { name: "Hotel Luxury", icon: <FaHotel />, color: "from-[#a855f7] to-[#ec4899]" },
     { name: "E-Commerce Hub", icon: <FaShoppingCart />, color: "from-orange-500 to-yellow-400" },
-    { name: "Digital Library", icon: <FaBook />, color: "from-indigo-500 to-purple-400" },
-    { name: "Music Stream", icon: <FaMusic />, color: "from-rose-500 to-pink-400" },
-    { name: "Gaming Arena", icon: <FaGamepad />, color: "from-cyan-500 to-blue-400" },
-    { name: "Cinema Review", icon: <FaFilm />, color: "from-violet-600 to-indigo-600" },
-  ];
+    ];
 
   return (
     <div className="p-10 text-white max-w-7xl mx-auto">
@@ -28,6 +24,7 @@ function Project() {
           Comprehensive project repository
         </p>
       </div>
+      
 
       {/* Projects Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

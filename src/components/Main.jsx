@@ -8,6 +8,7 @@ import Behind from "./Behind";
 import FeatureProject from "./FeatureProject";
 import Ending from "./Ending";
 import Certification from "./Certification";
+import Publication from "./Publication";
 
 
 
@@ -21,6 +22,7 @@ export default function Main() {
 
       <Behind />
       <FeatureProject></FeatureProject>
+      <Publication/>
       <Certification/>
       <Ending></Ending>
       
