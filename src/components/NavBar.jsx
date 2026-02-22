@@ -68,15 +68,16 @@ function NavBar() {
           </NavLink>
 
         </div>
-        <button
-          className="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 
-                 text-white font-bold py-2 px-6 rounded-full shadow-lg
-                 hover:from-amber-700 hover:to-amber-900 hover:scale-105
-                 transition duration-300 ease-in-out"
+        <a
+          href="mailto:mdabubakarsiddikdidar@gmail.com"
+          className="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800  
+             text-white font-bold py-2 px-6 rounded-full shadow-lg  
+             hover:from-amber-700 hover:to-amber-900 hover:scale-105  
+             transition duration-300 ease-in-out"
         >
           <FaHandshake size={18} />
           Hire Me
-        </button>
+        </a>
 
 
         {/* Mobile Toggle */}
@@ -107,10 +108,10 @@ function NavBar() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-                : "text-gray-400"
-              }`
-            }
+                  `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                    : "text-gray-400"
+                  }`
+                }
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -120,10 +121,10 @@ function NavBar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-                : "text-gray-400"
-              }`
-            }
+                  `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                    : "text-gray-400"
+                  }`
+                }
                 onClick={() => setIsOpen(false)}
               >
                 About
@@ -133,10 +134,10 @@ function NavBar() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-                : "text-gray-400"
-              }`
-            }
+                  `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                    : "text-gray-400"
+                  }`
+                }
                 onClick={() => setIsOpen(false)}
               >
                 Projects
@@ -145,11 +146,11 @@ function NavBar() {
             <li>
               <NavLink
                 to="/contact"
-                  className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-                : "text-gray-400"
-              }`
-            }
+                className={({ isActive }) =>
+                  `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                    : "text-gray-400"
+                  }`
+                }
                 onClick={() => setIsOpen(false)}
               >
                 Contact

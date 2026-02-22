@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroPic from '../assets/didar.jpg'
-import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaDownload, FaRocket } from "react-icons/fa";
+import { FaTwitter, FaFacebook, FaInstagram, FaYoutube,FaGithub, FaDownload, FaRocket, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 function Hero() {
 
@@ -23,12 +24,12 @@ function Hero() {
           <div className="w-1/2 mb-6 border-2 border-white rounded-full px-6 py-2 
                 bg-amber-900 text-amber-500 font-bold text-base sm:text-lg md:text-xl 
                 mx-auto lg:mx-0 flex items-center gap-3">
-  {/* Dot Circle */}
-  <div className="w-3 h-3 bg-amber-600 rounded-full"></div>
+            {/* Dot Circle */}
+            <div className="w-3 h-3 bg-amber-600 rounded-full"></div>
 
-  {/* Text */}
-  <span>Available for Work</span>
-</div>
+            {/* Text */}
+            <span>Available for Work</span>
+          </div>
 
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -48,13 +49,15 @@ function Hero() {
           {/* Buttons */}
           <div className="mt-5 text-center lg:text-left">
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start mt-6 gap-4">
-              <button
-                
-                className="w-50 bg-white text-amber-700 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition flex items-center gap-2"
+              <Link
+                to="/projects"
+                className="w-50 bg-white text-amber-700 hover:bg-amber-700 hover:text-white 
+             font-bold py-2 px-6 rounded-full transition flex items-center gap-2"
               >
-                <FaRocket size={18} className="text-amber-700 hover:text-white" />
+                <FaRocket size={18} className="text-amber-700 group-hover:text-white transition" />
                 View Projects
-              </button>
+              </Link>
+
               <button
                 onClick={handleDownload}
                 className="w-50 flex items-center gap-2 bg-transparent border-2 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition"
@@ -66,10 +69,26 @@ function Hero() {
 
             {/* Social Icons */}
             <div className="flex justify-center lg:justify-start mt-6 space-x-4">
-              <FaTwitter size={28} className="cursor-pointer hover:text-amber-300" />
-              <FaFacebook size={28} className="cursor-pointer hover:text-amber-300" />
-              <FaInstagram size={28} className="cursor-pointer hover:text-amber-300" />
-              <FaYoutube size={28} className="cursor-pointer hover:text-amber-300" />
+              <a href="https://github.com/Didariiuc">
+                <FaGithub size={28} className="hover:text-black transition-colors duration-300" />
+              </a>
+              <a href="https://www.linkedin.com/in/md-abu-bakar-siddik-didar-704863330?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
+                <FaLinkedin size={28} className="cursor-pointer hover:text-amber-300" />
+              </a>
+
+              <a href="https://x.com/didduuuuu?s=21npm run dev
+              ">
+                <FaTwitter size={28} className="cursor-pointer hover:text-amber-300" />
+              </a>
+
+              <a href="https://www.facebook.com/share/1EC5NwSCrN/?mibextid=wwXIfr">
+                <FaFacebook size={28} className="cursor-pointer hover:text-amber-300" />
+              </a>
+
+              <a href="https://youtube.com/@diva_tune?si=IfjX1caapzn50es9">
+                <FaYoutube size={28} className="cursor-pointer hover:text-amber-300" />
+              </a>
+
             </div>
           </div>
         </div>
