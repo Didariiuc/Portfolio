@@ -36,9 +36,9 @@ function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Full Stack <br />
+            Front-End <br />
             <span className='bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899] bg-clip-text text-transparent'>
-              MERN Developer
+              Developer
             </span>
           </h1>
 
@@ -46,7 +46,7 @@ function Hero() {
 
           <p className="mt-8 text-base md:text-lg text-neutral-400 max-w-xl leading-relaxed">
             Crafting high-performance web applications with the 
-            <span className="text-white font-semibold"> MERN Stack</span>. 
+            <span className="text-white font-semibold"> Front-End Developer</span>. 
             Passionate about turning complex problems into elegant, user-centric digital solutions.
           </p>
 
