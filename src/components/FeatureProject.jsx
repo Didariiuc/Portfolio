@@ -1,30 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import BehindPic from '../assets/didar.jpg';
+import BusPic from "../assets/busTicket.jpg"
+import MedicalPic from "../assets/medical.jpg"
+import HotelPic from "../assets/hotel.jpg"
 import { FaEye, FaCode, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    title: "Eco-Friendly E-Commerce",
-    desc: "A high-performance MERN stack application featuring real-time inventory and secure Stripe payments.",
+    title: "Online Bus Ticketing System",
+    desc: "A MERN stack–based online bus ticketing platform that allows users to search routes, view seat availability in real time, and securely book tickets with an intuitive, responsive interface.",
     tech: ["React", "Node.js", "MongoDB", "Tailwind"],
-    image: BehindPic,
+    image: BusPic,
     live: "#",
     code: "#"
   },
   {
-    title: "AI Chat Dashboard",
-    desc: "Intelligent interface for managing AI-driven customer support with real-time analytics and data visualization.",
+    title: "Medical Management System",
+    desc: "A modern medical management system designed to handle patient records, appointments, and administrative workflows through a clean, responsive interface with smooth animations.",
     tech: ["Next.js", "OpenAI API", "Framer Motion"],
-    image: BehindPic,
+    image: MedicalPic,
     live: "#",
     code: "#"
   },
   {
-    title: "DevSocial Network",
-    desc: "A specialized social platform for developers to share snippets, collaborate on repos, and find mentors.",
+    title: "Hotel Management System",
+    desc: "A comprehensive hotel management system that streamlines booking, room assignments, and guest services with an intuitive UI.",
     tech: ["React", "Firebase", "Redux"],
-    image: BehindPic,
+    image: HotelPic,
     live: "#",
     code: "#"
   }
@@ -42,7 +45,7 @@ function FeatureProject() {
 
       <div className="space-y-20">
         {projects.map((project, index) => (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -53,10 +56,10 @@ function FeatureProject() {
             <div className="w-full lg:w-1/2 relative">
               <div className="absolute -inset-2 bg-gradient-to-r from-[#a855f7] to-[#3b82f6] rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-20 transition duration-500"></div>
               <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-64 md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-110" 
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-64 md:h-[400px] object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-[#05050a]/40 group-hover:bg-transparent transition-all duration-500"></div>
               </div>
@@ -68,11 +71,11 @@ function FeatureProject() {
                 <span className="text-[#a855f7] font-mono text-sm font-bold">Project 0{index + 1}</span>
                 <div className="h-[1px] w-12 bg-white/20"></div>
               </div>
-              
+
               <h3 className="text-3xl md:text-4xl font-black group-hover:text-[#a855f7] transition-colors">
                 {project.title}
               </h3>
-              
+
               <p className="text-neutral-400 text-lg leading-relaxed">
                 {project.desc}
               </p>

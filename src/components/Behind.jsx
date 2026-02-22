@@ -1,5 +1,5 @@
 import React from 'react';
-import BehindPic from '../assets/didar.jpg';
+import BehindPic from '../assets/diase.jpeg';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaFacebook } from 'react-icons/fa';
 

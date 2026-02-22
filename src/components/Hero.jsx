@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroPic from '../assets/didar.jpg';
+import HeroPic from "../assets/suit.jpeg"
 import { motion } from 'framer-motion'; // For that smooth entrance
 import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaGithub, FaDownload, FaRocket, FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';

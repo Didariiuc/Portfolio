@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import Behind from "./Behind";
 import FeatureProject from "./FeatureProject";
 import Ending from "./Ending";
+import Certification from "./Certification";
 
 
 
@@ -20,6 +21,7 @@ export default function Main() {
 
       <Behind />
       <FeatureProject></FeatureProject>
+      <Certification/>
       <Ending></Ending>
       
 
