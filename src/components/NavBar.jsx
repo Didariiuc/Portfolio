@@ -66,7 +66,7 @@ function NavBar() {
                   <CgNametag className="text-xl text-white" />
                 </div>
               </div>
-              <div className="hidden sm:flex flex-col">
+              <div className=" sm:flex flex-col">
                 <h1 className="text-xl font-black tracking-tighter text-white italic">Bismillah<span className="text-cyan-400">.</span></h1>
                 <span className="text-[8px] font-mono font-bold text-neutral-500 uppercase tracking-[0.4em] -mt-1">Keep_Me_In_Your_Prayer</span>
 
@@ -111,7 +111,7 @@ function NavBar() {
                 whileTap={{ scale: 0.95 }}
                 /* 1. Updated href with your email and a subject line */
                 href="mailto:mdabubakarsiddikdidar@gmail.com"
-                className="hidden sm:flex items-center gap-2 px-6 py-2.5 bg-white rounded-xl text-[10px] font-black uppercase tracking-widest text-black transition-all"
+                className=" sm:flex items-center gap-2 px-6 py-2.5 bg-white rounded-xl text-[10px] font-black uppercase tracking-widest text-black transition-all"
               >
                 <FaHandshake size={14} />
                 Hire Me
