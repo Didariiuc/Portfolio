@@ -68,7 +68,7 @@ function NavBar() {
               </div>
               <div className=" sm:flex flex-col">
                 <h1 className="text-xl font-black tracking-tighter text-white italic">Bismillah<span className="text-cyan-400">.</span></h1>
-                <span className="text-[8px] font-mono font-bold text-neutral-500 uppercase tracking-[0.4em] -mt-1">Keep_Me_In_Your_Prayer</span>
+                {/* <span className="text-[8px] font-mono font-bold text-neutral-500 uppercase tracking-[0.4em] -mt-1">Keep_Me_In_Your_Prayer</span> */}
 
               </div>
             </Link>
