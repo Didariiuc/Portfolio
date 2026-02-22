@@ -57,7 +57,7 @@ function NavBar() {
             Projects
           </NavLink>
           <NavLink
-            to="/testimonial"
+            to="/contact"
             className={({ isActive }) =>
               `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
                 : "text-gray-400"
@@ -107,9 +107,10 @@ function NavBar() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
-                  }`
-                }
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
+              }`
+            }
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -119,9 +120,10 @@ function NavBar() {
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
-                  }`
-                }
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
+              }`
+            }
                 onClick={() => setIsOpen(false)}
               >
                 About
@@ -131,9 +133,10 @@ function NavBar() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
-                  }`
-                }
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
+              }`
+            }
                 onClick={() => setIsOpen(false)}
               >
                 Projects
@@ -141,11 +144,12 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="/testimonial"
-                className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
-                  }`
-                }
+                to="/contact"
+                  className={({ isActive }) =>
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
+              }`
+            }
                 onClick={() => setIsOpen(false)}
               >
                 Contact

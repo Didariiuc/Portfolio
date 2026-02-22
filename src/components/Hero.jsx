@@ -20,9 +20,16 @@ function Hero() {
         {/* Left Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           {/* Available for Work */}
-          <div className="w-1/2 mb-6 border-2 border-white rounded-full px-6 py-2 bg-amber-900 text-amber-500 font-bold text-base sm:text-lg md:text-xl mx-auto lg:mx-0 text-center lg:text-left">
-            Available for Work
-          </div>
+          <div className="w-1/2 mb-6 border-2 border-white rounded-full px-6 py-2 
+                bg-amber-900 text-amber-500 font-bold text-base sm:text-lg md:text-xl 
+                mx-auto lg:mx-0 flex items-center gap-3">
+  {/* Dot Circle */}
+  <div className="w-3 h-3 bg-amber-600 rounded-full"></div>
+
+  {/* Text */}
+  <span>Available for Work</span>
+</div>
+
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Full Stack
@@ -72,7 +79,7 @@ function Hero() {
           <img
             src={HeroPic}
             alt="Hero"
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] rounded-full border-4 sm:border-6 md:border-8 border-white shadow-lg hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_15px_#ec4899]"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] rounded-full   shadow-lg hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_10px_#ff8834]"
           />
         </div>
       </div>

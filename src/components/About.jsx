@@ -14,7 +14,15 @@ function About() {
                 </div>
 
                 {/* Text */}
-                <div className='w-full lg:w-1/2 flex justify-center items-center flex-col gap-6'>
+                <div className='w-full lg:w-1/2 flex justify-center items-left flex-col gap-6'>
+
+                <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold text-center lg:text-left">
+                    Crafting Digital Experiences with
+                    <br /> 
+                    <span className="text-amber-500 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">
+                        Code & Passion
+                    </span>
+                </h1>
                     <p className='text-center lg:text-left text-sm sm:text-base md:text-lg'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit saepe ipsam libero consequuntur minima delectus, sequi eius, quibusdam suscipit eum tempora ut error aspernatur placeat beatae, modi possimus ipsum! Dolor?
                     </p>

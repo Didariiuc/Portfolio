@@ -6,7 +6,7 @@ function Behind() {
   return (
     <div className="p-6 sm:p-10 text-white">
 
-      <div className='bg-white/20 flex flex-col lg:flex-row justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
+      <div className='bg-white/10 flex flex-col lg:flex-row justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
         
         {/* Written portion */}
         <div className='w-full lg:w-1/2 text-base sm:text-lg text-slate-300 p-2 sm:p-4'>

@@ -12,7 +12,7 @@ function FeatureProject() {
 
             <div className="space-y-6">
                 {/* Project Card */}
-                <div className='bg-white/20 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
+                <div className='bg-white/10 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
                     <img src={BehindPic} alt="Didar" className="w-full sm:w-3/4 md:w-1/2 h-48 sm:h-64 md:h-72 rounded-4xl object-cover" />
                     <div className="w-full lg:w-1/2 text-center lg:text-left">
                         <p className="text-sm sm:text-base md:text-lg mb-4">
@@ -36,7 +36,7 @@ function FeatureProject() {
                 </div>
 
                 {/* Repeat for other project cards */}
-                <div className='bg-white/20 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
+                <div className='bg-white/10 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
                     <div className="w-full lg:w-1/2 text-center lg:text-left">
                         <p className="text-sm sm:text-base md:text-lg mb-4">
                             Beyond the lines of code, I am a passionate programmer with a love for problem-solving and creativity.
@@ -61,7 +61,7 @@ function FeatureProject() {
                 </div>
 
                 {/* Third project card */}
-                <div className='bg-white/20 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
+                <div className='bg-white/10 flex flex-col lg:flex-row items-center lg:items-start justify-between rounded-4xl p-4 lg:p-8 space-y-6 lg:space-y-0 lg:space-x-6'>
                     <img src={BehindPic} alt="Didar" className="w-full sm:w-3/4 md:w-1/2 h-48 sm:h-64 md:h-72 rounded-4xl object-cover" />
                     <div className="w-full lg:w-1/2 text-center lg:text-left">
                         <p className="text-sm sm:text-base md:text-lg mb-4">
