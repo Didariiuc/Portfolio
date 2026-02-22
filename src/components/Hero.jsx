@@ -2,8 +2,6 @@ import React from 'react'
 import HeroPic from '../assets/didar.jpg'
 import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaDownload, FaRocket } from "react-icons/fa";
 
-
-
 function Hero() {
 
   const handleDownload = () => {
@@ -16,63 +14,67 @@ function Hero() {
   }
 
   return (
-    <div className="p-10 text-white ">
+    <div className="p-6 sm:p-10 text-white">
       <div className="flex flex-col lg:flex-row justify-around items-center gap-10">
 
         {/* Left Section */}
-        <div className="lg:w-1/2 text-center lg:text-left">
-          {/* Availeable for Work */}
-          <div className="mb-8 border-2 border-white-700 rounded-full px-11 py-2 w-70 bg-amber-900 text-amber-500 font-bold text-xl">
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          {/* Available for Work */}
+          <div className="w-1/2 mb-6 border-2 border-white rounded-full px-6 py-2 bg-amber-900 text-amber-500 font-bold text-base sm:text-lg md:text-xl mx-auto lg:mx-0 text-center lg:text-left">
             Available for Work
           </div>
 
-          <h1 className="text-5xl font-bold">Full Stak 
-           <br /> <span className='text-transparent bg-gradient-to-r from-amber-500 via-amber-900 to-amber-500 bg-clip-text text-7xl'>Mern Developer</span></h1>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Full Stack
+            <br />
+            <span className='text-transparent bg-gradient-to-r from-amber-500 via-amber-900 to-amber-500 bg-clip-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
+              Mern Developer
+            </span>
+          </h1>
+
           <hr className="mt-4 w-full border-t border-slate-300" />
-          <p className="mt-6 text-lg text-slate-100">
+
+          <p className="mt-6 text-sm sm:text-base md:text-lg text-slate-100">
             Crafting high-quality code and building innovative solutions to real-world problems. With a passion for programming and a commitment to excellence, I strive to create impactful software that makes a difference.
           </p>
-          <div className=" mt-5 text-center lg:text-left">
 
-
-            <div className="flex justify-center lg:justify-start mt-6 space-x-4">
+          {/* Buttons */}
+          <div className="mt-5 text-center lg:text-left">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start mt-6 gap-4">
               <button
-                onClick={handleDownload}
-                className="mr-3 bg-white text-amber-700 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition flex items-center gap-2"
+                
+                className="w-50 bg-white text-amber-700 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition flex items-center gap-2"
               >
                 <FaRocket size={18} className="text-amber-700 hover:text-white" />
                 View Projects
               </button>
               <button
                 onClick={handleDownload}
-                className="flex items-center gap-2 bg-transparent border-2 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition"
+                className="w-50 flex items-center gap-2 bg-transparent border-2 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition"
               >
                 <FaDownload size={20} className="hover:text-amber-300" />
                 Download CV
               </button>
             </div>
+
+            {/* Social Icons */}
             <div className="flex justify-center lg:justify-start mt-6 space-x-4">
-              <FaTwitter size={30} className="cursor-pointer hover:text-amber-300" />
-              <FaFacebook size={30} className="cursor-pointer hover:text-amber-300" />
-              <FaInstagram size={30} className="cursor-pointer hover:text-amber-300" />
-              <FaYoutube size={30} className="cursor-pointer hover:text-amber-300" />
+              <FaTwitter size={28} className="cursor-pointer hover:text-amber-300" />
+              <FaFacebook size={28} className="cursor-pointer hover:text-amber-300" />
+              <FaInstagram size={28} className="cursor-pointer hover:text-amber-300" />
+              <FaYoutube size={28} className="cursor-pointer hover:text-amber-300" />
             </div>
           </div>
         </div>
 
         {/* Middle Section (Image) */}
-        <div className="lg:w-1/2 flex justify-center">
+        <div className="w-full lg:w-1/2 flex justify-center">
           <img
             src={HeroPic}
             alt="Hero"
-            width={350}
-            height={350}
-            className="rounded-full border-8 border-white shadow-lg hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_15px_#ec4899]"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] rounded-full border-4 sm:border-6 md:border-8 border-white shadow-lg hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_15px_#ec4899]"
           />
         </div>
-
-        {/* Right Section */}
-
       </div>
     </div>
   )

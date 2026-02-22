@@ -21,13 +21,15 @@ function Skills() {
 
   return (
     <div className="p-10 text-white">
-      <h2 className="text-3xl font-bold mb-8 text-center">My Skills</h2>
+      <h2 className="text-4xl font-bold mb-3"><span className='text-amber-600'>Tech</span> Stack</h2>
+      <p className="mb-6">Here are the technologies I've worked with:</p>
       
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
         {skills.map((skill, index) => (
           <div 
             key={index} 
-            className="bg-white/10 rounded-lg shadow-md p-4 text-center hover:bg-white/20 transition flex flex-col items-center gap-2"
+            className="bg-white/10 rounded-lg
+           shadow-md p-3 text-center hover:bg-white/20 transition flex flex-col items-center gap-2"
           >
             <span className="text-3xl">{skill.icon}</span>
             <span className="font-semibold">{skill.name}</span>

@@ -3,6 +3,8 @@ import { CgNametag } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { Link, NavLink } from "react-router";
+import { FaHandshake } from "react-icons/fa";
+
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,21 +28,19 @@ function NavBar() {
         <div className="hidden lg:flex space-x-6">
           <NavLink
             to="/"
-             className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${
-                isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-        : "text-gray-400"
+            className={({ isActive }) =>
+              `text-white text-lg px-4 py-2  transition duration-900 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
               }`
             }
           >
             Home
           </NavLink>
           <NavLink
-            to="/skills"
-             className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${
-                isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-        : "text-gray-400"
+            to="/about"
+            className={({ isActive }) =>
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
               }`
             }
           >
@@ -48,10 +48,9 @@ function NavBar() {
           </NavLink>
           <NavLink
             to="/projects"
-             className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${
-                isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-        : "text-gray-400"
+            className={({ isActive }) =>
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
               }`
             }
           >
@@ -60,9 +59,8 @@ function NavBar() {
           <NavLink
             to="/testimonial"
             className={({ isActive }) =>
-              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${
-                isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
-        : "text-gray-400"
+              `text-white text-lg px-4 py-2 rounded-full transition duration-300 ${isActive ? "text-white relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-amber-500"
+                : "text-gray-400"
               }`
             }
           >
@@ -70,9 +68,16 @@ function NavBar() {
           </NavLink>
 
         </div>
-        <button className="items-center justify-center flex text-white text-lg px-4 py-2 rounded-full bg-amber-700 hover:bg-amber-600 transition duration-300">
+        <button
+          className="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-800 
+                 text-white font-bold py-2 px-6 rounded-full shadow-lg
+                 hover:from-amber-700 hover:to-amber-900 hover:scale-105
+                 transition duration-300 ease-in-out"
+        >
+          <FaHandshake size={18} />
           Hire Me
         </button>
+
 
         {/* Mobile Toggle */}
         <div onClick={handleToggle} className="lg:hidden cursor-pointer">
@@ -102,8 +107,7 @@ function NavBar() {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${
-                    isActive ? "text-amber-500" : ""
+                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -113,10 +117,9 @@ function NavBar() {
             </li>
             <li>
               <NavLink
-                to="/skills"
+                to="/about"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${
-                    isActive ? "text-amber-500" : ""
+                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -128,8 +131,7 @@ function NavBar() {
               <NavLink
                 to="/projects"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${
-                    isActive ? "text-amber-500" : ""
+                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -141,8 +143,7 @@ function NavBar() {
               <NavLink
                 to="/testimonial"
                 className={({ isActive }) =>
-                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${
-                    isActive ? "text-amber-500" : ""
+                  `text-amber-300 text-xl hover:text-amber-500 transition duration-300 ${isActive ? "text-amber-500" : ""
                   }`
                 }
                 onClick={() => setIsOpen(false)}
@@ -150,7 +151,7 @@ function NavBar() {
                 Contact
               </NavLink>
             </li>
-            
+
           </ul>
         </div>
       )}

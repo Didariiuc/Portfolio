@@ -13,6 +13,7 @@ import NavBar from './components/NavBar.jsx'
 import Hero from './components/Hero.jsx'
 import Main from './components/main.jsx'
 import Home from './components/Home.jsx'
+import About from './components/About.jsx'
 import { Navigate } from 'react-router-dom'
 
 const router = createBrowserRouter(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
       <Route path='/projects' element={<Project />} />
       <Route path='/testimonial' element={<Testimonial />} />
       <Route path='/education' element={<Education />} />
+      <Route path='/about' element={<About />} />
       <Route path="*" element={<Navigate to="/" replace />} />
 
 

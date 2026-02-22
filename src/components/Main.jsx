@@ -5,22 +5,26 @@ import Testimonial from './Testimonial';
 import Education from './Education';
 import Footer from './Footer';
 import Skills from "./Skills";
-import Achievement from "./Achievement";
+import Behind from "./Behind";
+import FeatureProject from "./FeatureProject";
+import Ending from "./Ending";
 
 
 
 export default function Main() {
   return (
     <div className="min-h-screen">
-        
-        <Hero></Hero>
-        <Achievement/>
-        <Project></Project>
-        <Skills></Skills>
-        <Testimonial></Testimonial>
-        <Education></Education>
-        
-        
+
+      <Hero></Hero>
+
+      <Skills></Skills>
+
+      <Behind />
+      <FeatureProject></FeatureProject>
+      <Ending></Ending>
+      
+
+
     </div>
   )
 }
