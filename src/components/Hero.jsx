@@ -1,109 +1,122 @@
-import React from 'react'
-import HeroPic from '../assets/didar.jpg'
-import { FaTwitter, FaFacebook, FaInstagram, FaYoutube,FaGithub, FaDownload, FaRocket, FaLinkedin } from "react-icons/fa";
-import { Link } from 'react-router-dom'
+import React from 'react';
+import HeroPic from '../assets/didar.jpg';
+import { motion } from 'framer-motion'; // For that smooth entrance
+import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaGithub, FaDownload, FaRocket, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 function Hero() {
-
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '../public/CV.pdf';
+    link.href = '/CV.pdf'; // Corrected path for public folder
     link.download = 'CV-Abu Bakar.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-  }
+  };
 
   return (
-    <div className="p-6 sm:p-10 text-white">
-      <div className="flex flex-col lg:flex-row justify-around items-center gap-10">
+    <div className="relative min-h-screen flex items-center justify-center p-6 pt-24 sm:p-10 text-white overflow-hidden">
+      
+      <div className="z-10 flex flex-col-reverse lg:flex-row justify-around items-center gap-12 max-w-7xl w-full">
 
-        {/* Left Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
-          {/* Available for Work */}
-          <div className="w-1/2 mb-6 border-2 border-white rounded-full px-6 py-2 
-                bg-amber-900 text-amber-500 font-bold text-base sm:text-lg md:text-xl 
-                mx-auto lg:mx-0 flex items-center gap-3">
-            {/* Dot Circle */}
-            <div className="w-3 h-3 bg-amber-600 rounded-full"></div>
-
-            {/* Text */}
-            <span>Available for Work</span>
+        {/* --- LEFT SECTION --- */}
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="w-full lg:w-3/5 text-center lg:text-left"
+        >
+          {/* Status Badge */}
+          <div className="inline-flex items-center gap-3 mb-6 border border-[#a855f7]/30 rounded-full px-5 py-2 bg-[#a855f7]/10 backdrop-blur-md">
+            <div className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </div>
+            <span className="text-sm md:text-base font-medium text-neutral-200">Available for Work</span>
           </div>
 
-
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Full Stack
-            <br />
-            <span className='text-transparent bg-gradient-to-r from-amber-500 via-amber-900 to-amber-500 bg-clip-text text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-              Mern Developer
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+            Full Stack <br />
+            <span className='bg-gradient-to-r from-[#6366f1] via-[#a855f7] to-[#ec4899] bg-clip-text text-transparent'>
+              MERN Developer
             </span>
           </h1>
 
-          <hr className="mt-4 w-full border-t border-slate-300" />
+          <div className="mt-6 h-1 w-20 bg-[#a855f7] rounded-full mx-auto lg:mx-0 shadow-[0_0_15px_#a855f7]"></div>
 
-          <p className="mt-6 text-sm sm:text-base md:text-lg text-slate-100">
-            Crafting high-quality code and building innovative solutions to real-world problems. With a passion for programming and a commitment to excellence, I strive to create impactful software that makes a difference.
+          <p className="mt-8 text-base md:text-lg text-neutral-400 max-w-xl leading-relaxed">
+            Crafting high-performance web applications with the 
+            <span className="text-white font-semibold"> MERN Stack</span>. 
+            Passionate about turning complex problems into elegant, user-centric digital solutions.
           </p>
 
-          {/* Buttons */}
-          <div className="mt-5 text-center lg:text-left">
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start mt-6 gap-4">
-              <Link
-                to="/projects"
-                className="w-50 bg-white text-amber-700 hover:bg-amber-700 hover:text-white 
-             font-bold py-2 px-6 rounded-full transition flex items-center gap-2"
-              >
-                <FaRocket size={18} className="text-amber-700 group-hover:text-white transition" />
-                View Projects
-              </Link>
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start mt-10 gap-5">
+            <Link
+              to="/projects"
+              className="group relative flex items-center justify-center gap-2 bg-gradient-to-r from-[#3b82f6] to-[#2dd4bf] px-8 py-3 rounded-full font-bold text-white transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(59,130,246,0.6)]"
+            >
+              <FaRocket size={18} className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
+              View Projects
+            </Link>
 
-              <button
-                onClick={handleDownload}
-                className="w-50 flex items-center gap-2 bg-transparent border-2 hover:bg-amber-700 hover:text-white font-bold py-2 px-6 rounded-full transition"
-              >
-                <FaDownload size={20} className="hover:text-amber-300" />
-                Download CV
-              </button>
-            </div>
-
-            {/* Social Icons */}
-            <div className="flex justify-center lg:justify-start mt-6 space-x-4">
-              <a href="https://github.com/Didariiuc">
-                <FaGithub size={28} className="hover:text-black transition-colors duration-300" />
-              </a>
-              <a href="https://www.linkedin.com/in/md-abu-bakar-siddik-didar-704863330?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-                <FaLinkedin size={28} className="cursor-pointer hover:text-amber-300" />
-              </a>
-
-              <a href="https://x.com/didduuuuu?s=21npm run dev
-              ">
-                <FaTwitter size={28} className="cursor-pointer hover:text-amber-300" />
-              </a>
-
-              <a href="https://www.facebook.com/share/1EC5NwSCrN/?mibextid=wwXIfr">
-                <FaFacebook size={28} className="cursor-pointer hover:text-amber-300" />
-              </a>
-
-              <a href="https://youtube.com/@diva_tune?si=IfjX1caapzn50es9">
-                <FaYoutube size={28} className="cursor-pointer hover:text-amber-300" />
-              </a>
-
-            </div>
+            <button
+              onClick={handleDownload}
+              className="flex items-center justify-center gap-2 border border-neutral-700 bg-white/5 backdrop-blur-md hover:bg-white/10 px-8 py-3 rounded-full font-bold transition-all hover:border-neutral-500"
+            >
+              <FaDownload size={18} className="text-[#a855f7]" />
+              Download CV
+            </button>
           </div>
-        </div>
 
-        {/* Middle Section (Image) */}
-        <div className="w-full lg:w-1/2 flex justify-center">
-          <img
-            src={HeroPic}
-            alt="Hero"
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-[350px] lg:h-[350px] rounded-full   shadow-lg hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_10px_#ff8834]"
-          />
-        </div>
+          {/* Social Icons */}
+          <div className="flex justify-center lg:justify-start mt-10 space-x-6">
+            {[
+              { Icon: FaGithub, link: "https://github.com/Didariiuc", color: "hover:text-white" },
+              { Icon: FaLinkedin, link: "https://www.linkedin.com/...", color: "hover:text-[#0077b5]" },
+              { Icon: FaTwitter, link: "https://x.com/...", color: "hover:text-[#1da1f2]" },
+              { Icon: FaFacebook, link: "https://facebook.com/...", color: "hover:text-[#1877f2]" },
+              { Icon: FaYoutube, link: "https://youtube.com/...", color: "hover:text-red-500" },
+            ].map(({ Icon, link, color }, idx) => (
+              <a key={idx} href={link} className={`text-neutral-500 text-2xl transition-all duration-300 ${color} hover:scale-125`}>
+                <Icon />
+              </a>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* --- RIGHT SECTION (Image) --- */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative group"
+        >
+          {/* Animated Glow Behind Image */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#6366f1] to-[#a855f7] rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition duration-500"></div>
+          
+          <div className="relative p-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+            <img
+              src={HeroPic}
+              alt="Hero"
+              className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-[400px] lg:h-[400px] rounded-full object-cover shadow-2xl grayscale-[20%] group-hover:grayscale-0 transition-all duration-500 border-2 border-white/20"
+            />
+          </div>
+
+          {/* Tech Badge Overlay */}
+          <motion.div 
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 3 }}
+            className="absolute -bottom-4 -right-4 bg-[#05050a] border border-white/10 p-4 rounded-2xl backdrop-blur-xl shadow-xl"
+          >
+             <p className="text-xs font-bold text-neutral-400 uppercase tracking-widest">Experience</p>
+             <p className="text-xl font-black bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">0+ Years</p>
+          </motion.div>
+        </motion.div>
+
       </div>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
